@@ -12,6 +12,7 @@ import { PromotionModule } from './modules/promotion/promotion.module';
 import { InvoiceModule } from './modules/invoice/invoice.module';
 import { SupportModule } from './modules/support/support.module';
 import { ReviewModule } from './modules/review/review.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { ReviewModule } from './modules/review/review.module';
     InvoiceModule,
     SupportModule,
     ReviewModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
