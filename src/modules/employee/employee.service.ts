@@ -28,7 +28,7 @@ export class EmployeeService {
     return this.employeeModel.find().exec();
   }
 
-  async findByEmail(email: string): Promise<Employee> {
+  async findByEmail(email: string): Promise<EmployeeDocument | null> {
     return this.employeeModel.findOne({ email }).exec();
   }
 

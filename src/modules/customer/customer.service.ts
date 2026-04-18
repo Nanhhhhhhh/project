@@ -28,7 +28,7 @@ export class CustomerService {
     return this.customerModel.find().exec();
   }
 
-  async findByEmail(email: string): Promise<Customer> {
+  async findByEmail(email: string): Promise<CustomerDocument | null> {
     return this.customerModel.findOne({ email }).exec();
   }
 

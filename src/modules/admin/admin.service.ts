@@ -28,7 +28,7 @@ export class AdminService {
     return this.adminModel.find().exec();
   }
 
-  async findByEmail(email: string): Promise<Admin> {
+  async findByEmail(email: string): Promise<AdminDocument | null> {
     return this.adminModel.findOne({ email }).exec();
   }
 
